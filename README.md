@@ -7,4 +7,3 @@ VWS_ESA-DVCS
 - pull Project: README geändert, dann pull;
   Data.java in model-Package hinzugefügt (-> commit&push), PULL, Kommentar gelöscht (-> commit&push), PULL
 - Command Prompt: div. commands ausgeführt (s. PDF)
-
