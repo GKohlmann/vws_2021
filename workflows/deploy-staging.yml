@@ -1,9 +1,0 @@
-name: staging deployment
-
-on: 
-  pull_request:
-    types: [labeled]
-
-jobs:
-  build:
-    runs-on: 
