@@ -1,14 +1,23 @@
 pipeline {
     agent any
+    
+    tools {
+        maven 'M3'
+    }
 
     stages {
-        stage('Build') {
+    	stage('Checkout') {
             steps {
-                echo 'Building..'
-                sh 'make' 
-                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
+                git 'https://github.com/GKohlmann/vws_2021'
             }
         }
+    
+        stage('Build') {
+            steps {
+                sh 'mvn -B package'
+            }
+        }
+        
         stage('Test') {
             steps {
                 echo 'Testing..'
