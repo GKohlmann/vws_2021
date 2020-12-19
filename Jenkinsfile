@@ -4,9 +4,9 @@ pipeline {
         skipStagesAfterUnstable()
     }
     stages {
-        stage('Build') { 
-            steps { 
-                sh 'make' 
+        stage('build') {
+            steps {
+                sh 'mvn --version'
             }
         }
         stage('Test'){
