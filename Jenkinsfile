@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'set'
+                sh '--version'
             }
         }
         stage('Test'){
