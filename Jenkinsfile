@@ -1,12 +1,10 @@
 pipeline { 
     agent any 
-    options {
-        skipStagesAfterUnstable()
-    }
+
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                bat 'set'
             }
         }
         stage('Test'){
