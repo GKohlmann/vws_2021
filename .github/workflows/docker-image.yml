@@ -34,6 +34,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
+          tag: khlmnngrt/docker-vws2021:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
