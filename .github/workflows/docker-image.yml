@@ -27,6 +27,8 @@ jobs:
         id: buildx
         uses: docker/setup-buildx-action@v1
         with:
+          context: ./
+          file: ./Dockerfile
           push: true
           tag: khlmnngrt/docker-vws2021:latest
 
